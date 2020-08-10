@@ -1,10 +1,12 @@
-
+#include "functions.h"
 #include <iostream>
 
 using namespace std;
 
 int main()
 {   bool var=1;
+    map <int,tarifas> valor;
+    map <int,nivel> nive;
     int opcion;
     cout<<    "      _____________________________________________\n"
               "      |   Bienvenido a su Parqueadero Multinivel  |\n";
@@ -20,15 +22,15 @@ int main()
         cin>>opcion;
         switch(opcion){
         case 1:
-            //iniciar_admi(inv,com);
+            iniciar_admi(valor,nive);
             cout << "Hello World!" << endl;
             break;
         case 2:
-                cout << "jaja!" << endl;
-            //ingresar_usu(inv,com);
+            Nuevo_usu();
             break;
         case 3:
-            //registrar_usu();
+            //aquí debe ingresar su usuario previamente creado y su contraseña;
+            //luego se depliega las tarifas.
             break;
         case 0:
             var=0;

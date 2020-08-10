@@ -4,4 +4,12 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
+        functions.cpp \
+        main.cpp \
+        nivel.cpp \
+        tarifas.cpp
+
+HEADERS += \
+    functions.h \
+    nivel.h \
+    tarifas.h
